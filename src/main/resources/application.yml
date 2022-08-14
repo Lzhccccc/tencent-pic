@@ -1,0 +1,23 @@
+spring:
+    redis:
+        host: localhost
+        port: 6379
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/springboot_learning?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+        username: root
+        password: 123456
+    servlet:
+        multipart:
+            max-file-size: 1024MB
+            max-request-size: 1024MB
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+tencent:
+    cos:
+        file:
+            region: 你的节点
+            secretid: 你的身份信息
+            secretkey: 你的密钥
+            bucketname: 存储桶
